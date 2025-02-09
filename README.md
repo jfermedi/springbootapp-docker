@@ -29,5 +29,5 @@ This is a simple springboot application with usage of docker. There's only a GET
  2.1 Open the docker desktop: First, ensure you've the docker desktop up and running in order to be able to execute the docker commands directly on your local environment. Apart from that, the docker desktop provides a UI more friendly to check the containers and images running.<br>
  2.2 Open the **cmd** in your desired location and, use the following command to check the docker images running in your environment : `` docker images `` <br>
  2.3 To pull a docker image you need to access the **dockerhub** and search for the repository and image inside of it that you want to pull. For this application you can enter the following docker command to pull the image : `` docker pull jfermedi2105/demo-applications:v1``<br>
- 2.4 After pulling successfully the docker image, you can type the `` docker images `` command to check the new image that had been pulled : ![App Screenshot](images/docker-images.jpeg)
+ 2.4 After pulling successfully the docker image, you can type the `` docker images `` command to check the new image that had been pulled : ![App Screenshot](docker-demo/images/docker-images.jpg)
  
