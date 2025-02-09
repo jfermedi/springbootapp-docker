@@ -11,4 +11,9 @@ This is a simple springboot application with usage of docker. There's only a GET
 - **Springboot** : Back-end framework
 - **Docker** : For creating container of the application
 
-## Instalation and setup
+## Pre-requisites
+- Docker desktop (for creating the image of the application and being able to pull or push images on DockerHub)
+- Java 17 or later (optional, needed only for cloning the project into your local environment)
+- Maven (for dependency management, optional needed only for cloning the project into your local environment)
+- Postman (optional, for testing the API endpoint using a collection)
+- Git (for cloning the project files and resources, optional)
