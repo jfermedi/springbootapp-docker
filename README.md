@@ -22,12 +22,20 @@ This is a simple springboot application with usage of docker. There's only a GET
 1 . Docker desktop:
   Go to official docker page (https://docs.docker.com/get-started/get-docker/) and install Docker Desktop according to your system (Windows, Mac or Linux).
   Once the installation it's done , you can open the **cmd** in your system and type the following command to check the version installed : 
-  `` docker --version `` .<br>
-2 . Pull and Push Docker image: 
- In order to be able to pull the image of this application, we need to use **docker commands** directly in the **cmd**. There're a lot of docker commands that can be used, but in this guide we'll focus only on the **docker pull** and **docker push** commands. 
+  `` docker --version `` .<br> 
+  ![App Screenshot](docker-demo/images/docker-version.jpg)<br>
+2 . Pull  Docker image: 
+ In order to be able to pull the image of this application, we need to use **docker commands** directly in the **cmd**. There're a lot of docker commands that can be used, but in this guide we'll focus only on the **docker pull** and **docker run** commands. 
  The first command we need to use is the **docker pull** to pull the image of the application to our local environmet. The proccess of pulling a docker image is simple, but the syntax need to be followed correctly.  
  2.1 Open the docker desktop: First, ensure you've the docker desktop up and running in order to be able to execute the docker commands directly on your local environment. Apart from that, the docker desktop provides a UI more friendly to check the containers and images running.<br>
+ ![App_Screenshot](docker-demo/images/docker-desktop.jpg)<br>
  2.2 Open the **cmd** in your desired location and, use the following command to check the docker images running in your environment : `` docker images `` <br>
+ ![App Screenshot](docker-demo/images/docker-images-before-pull.jpg)<br>
  2.3 To pull a docker image you need to access the **dockerhub** and search for the repository and image inside of it that you want to pull. For this application you can enter the following docker command to pull the image : `` docker pull jfermedi2105/demo-applications:v1``<br>
- 2.4 After pulling successfully the docker image, you can type the `` docker images `` command to check the new image that had been pulled : ![App Screenshot](docker-demo/images/docker-images.jpg)
- 
+ 2.4 After pulling successfully the docker image, you can type the `` docker images `` command to check the new image that had been pulled : ![App Screenshot](docker-demo/images/docker-images.jpg)<br>
+ 2.5 Running the application: <br>
+  After pulling the image we're able to run the application by simply enter the docker command `` docker run image -p <port:port> <image-name:tag>``, and we'll be able to see the application starting in the cmd: <br>![App_Screenshot](docker-demo/images/docker-run.jpg)<br>
+  If we go to the bbrowser and type for the endpoint **http://localhost:8080/dockerdemo**, we'll be able to see the message that it's being returned: <br>
+  ![App_Screenshot](docker-demo/images/application-running.jpg)<br>
+ 2.6 Stopping the application: To stop the application in the cmd just type `` ctrl + c `` or go to the docker desktop and stop the image that it's running :<br>
+ ![App_Screenshot](docker-demo/images/stop-docker-desktop.jpg)
